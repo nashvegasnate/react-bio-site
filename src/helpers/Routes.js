@@ -11,10 +11,7 @@ import Projects from '../views/Projects';
 import About from '../views/About';
 import Tech from '../views/Tech';
 import Contact from '../views/Contact';
-import ProjectsCRUD from '../views/admin/ProjectsCRUD';
-
-
-
+import EditProjects from '../views/admin/EditProjects';
 // import Players from '../views/Players';
 // import SinglePlayer from '../views/SinglePlayer';
 // import NotFound from '../views/NotFound';
@@ -23,7 +20,6 @@ const AuthedRoute = ({ component: Component, admin, ...rest }) => {
   const routeChecker = (burrito) => (admin
     ? (<Component {...burrito} admin={admin} />)
     : (<Redirect to={{ pathname: '/', state: { from: burrito.location } }} />));
-  
   return <Route {...rest} render={(props) => routeChecker(props)} />;
 };
 
@@ -61,10 +57,10 @@ function Routes({ admin }) {
         />
         <AuthedRoute
           exact
-          path='/projectsCrud'
+          path='/editProjects'
           admin={admin}
-          component={ProjectsCRUD}
-        />  
+          component={EditProjects}
+        />
         <Route path='*' component={Home} />
       </Switch>
     </div>
