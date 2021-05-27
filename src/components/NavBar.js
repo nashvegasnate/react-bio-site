@@ -25,38 +25,39 @@ const NavBar = ({ admin }) => {
   );
 
   return (
-    <div>
-      <Navbar color="light" light expand="md" justifycontent="space-around">
-        <Link to="/home">Nathan Keith</Link>
+    <div className="navBar">
+      <Navbar color="light" light expand="lg" justifycontent="space-evenly">
+        <Link to="/">Nathan Keith</Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
-          {admin && authenticated()}
-              {admin !== null && (
-                <NavItem>
-                  {admin ? (
-                  <Button color="warning" onClick={signOutUser}>SIGN OUT
-                  </Button>
-                  ) : (
-                  <Button color="info" onClick={signInUser}>Admin?
-                  </Button>
-                  )}
-                  </NavItem>
-              )}
           </Nav>
-         </Collapse>
           <NavItem>
-                    <Link className="nav-link" to="/about">ABOUT</Link>
-                  </NavItem>
+            <Link className="nav-link" to="/about">ABOUT</Link>
+          </NavItem>
+          <NavItem>
+            <Link className="nav-link" to="/projects">PROJECTS</Link>
+          </NavItem>
+          <NavItem>
+            <Link className="nav-link" to="/tech">TECHNOLOGIES</Link>
+          </NavItem>
+          <NavItem>
+            <Link className="nav-link" to="/contact">CONTACT</Link>
+          </NavItem>
+          {admin && authenticated()}
+              {admin !== null
+              && <div>
                   <NavItem>
-                    <Link className="nav-link" to="/projects">PROJECTS</Link>
+                    {admin ? (
+                      <Button className="signOut" color="warning" onClick={signOutUser}>SIGN OUT
+                      </Button>
+                    ) : (
+                      <Button className="signIn" color="info" onClick={signInUser}>EDIT?
+                      </Button>
+                    )}
                   </NavItem>
-                  <NavItem>
-                    <Link className="nav-link" to="/tech">TECHNOLOGIES</Link>
-                  </NavItem>
-                  <NavItem>
-                    <Link className="nav-link" to="/contact">CONTACT</Link>
-                  </NavItem>
+                </div>}
+        </Collapse>
       </Navbar>
     </div>
   );

@@ -27,7 +27,7 @@ AuthedRoute.propTypes = {
   component: PropTypes.func,
   admin: PropTypes.any
 };
-function Routes({ admin }) {
+function Routes({ projects, setProjects, admin }) {
   return (
     <div>
       <Switch>
@@ -43,7 +43,7 @@ function Routes({ admin }) {
         <Route
           exact
           path='/projects'
-          component={Projects}
+          component={() => <Projects projects={projects} setProjects={setProjects} />}
         />
         <Route
           exact
@@ -68,7 +68,9 @@ function Routes({ admin }) {
 }
 
 Routes.propTypes = {
-  admin: PropTypes.any
+  admin: PropTypes.any,
+  setProjects: PropTypes.func,
+  projects: PropTypes.array
 };
 
 export default Routes;

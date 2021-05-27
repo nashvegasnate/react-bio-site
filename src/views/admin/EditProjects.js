@@ -1,14 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ProjectsForm from '../../components/ProjectsForm';
 
-export default function EditProjects(admin) {
+function AddProject({ admin, setProjects }) {
   return (
     <div>
-      {admin ? <h1>EDIT PROJECTS PAGE</h1> : <h2>Nothing to see here</h2>}
+      <ProjectsForm
+        formTitle='Add Project'
+        setProjects={setProjects}
+        admin={admin}
+      />
     </div>
   );
 }
 
-EditProjects.propTypes = {
+AddProject.propTypes = {
+  setProjects: PropTypes.func,
   admin: PropTypes.any
 };
+
+export default AddProject;

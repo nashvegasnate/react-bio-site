@@ -1,6 +1,10 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 @import 'variables';
+@import 'forms';
+@import 'buttons';
 
 body {
   background-color: $favColor;
+  justify-content: space-around;
+
 }
