@@ -50,7 +50,7 @@ const ProjectsForm = ({
       // addProject(project).then(setProjects);
       // history.push('/projects');
       addProject(project).then((response) => {
-        setProjects(response);
+        setProject(response);
         history.push('/projects');
       });
 
