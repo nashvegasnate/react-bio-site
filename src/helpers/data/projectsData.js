@@ -1,6 +1,4 @@
-// import firebase from 'firebase';
 import axios from 'axios';
-// import 'firebase/auth';
 import firebaseConfig from '../apiKeys';
 
 const dbUrl = firebaseConfig.databaseURL;
@@ -25,6 +23,12 @@ const addProject = (obj) => new Promise((resolve, reject) => {
 const updateProject = (project) => new Promise((resolve, reject) => {
   axios.patch(`${dbUrl}/projects/${project.firebaseKey}.json`, project)
     .then(() => getProjects().then(resolve))
+    .catch((error) => reject(error));
+});
+
+const deleteProject = (firebaseKey) => new Promise((resolve, reject) => {
+  axios.delete(`${dbUrl}/projects/${firebaseKey}.json`)
+    .then(() => getProjects().then((projectsArray) => resolve(projectsArray)))
     .catch((error) => reject(error));
 });
 
@@ -60,7 +64,8 @@ const updateProject = (project) => new Promise((resolve, reject) => {
 export {
   getProjects,
   addProject,
-  updateProject
+  updateProject,
+  deleteProject
 };
 // deleteBoard,
 // createBoard,

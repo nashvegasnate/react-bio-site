@@ -58,8 +58,10 @@ function Routes({ projects, setProjects, admin }) {
         <AuthedRoute
           exact
           path='/editProjects'
-          admin={admin}
-          component={EditProjects}
+          component={() => (
+            <EditProjects projects={projects} setProjects={setProjects} />
+          )}
+            admin={admin}
         />
         <Route path='*' component={Home} />
       </Switch>

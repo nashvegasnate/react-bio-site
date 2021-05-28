@@ -8,7 +8,7 @@ import {
   Input
 } from 'reactstrap';
 import PropTypes from 'prop-types';
-import { addProject, updateProject } from '../helpers/data/projectsData';
+import { addProject, updateProject } from '../helpers/data/ProjectsData';
 
 const ProjectsForm = ({
   formTitle,
@@ -47,12 +47,12 @@ const ProjectsForm = ({
       // make call to updateProject to update project and rerender the DOM
       updateProject(project).then(setProjects);
     } else {
-      // addProject(project).then(setProjects);
-      // history.push('/projects');
-      addProject(project).then((response) => {
-        setProject(response);
-        history.push('/projects');
-      });
+      addProject(project).then(setProjects);
+      history.push('/projects');
+      // addProject(project).then((response) => {
+      //   setProject(response);
+      //   history.push('/projects');
+      // });
 
       setProject({
         name: '',
