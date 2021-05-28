@@ -29,12 +29,14 @@ function ProjectsCard({
     <ProjectsItem>
       <Card body id="projectsCard">
         <CardImg id="screenshot" height="200px" src={screenshot}></CardImg>
-        <CardSubtitle tag="h5" className="text-center mt-1 mb-3">{name}</CardSubtitle>
-        <CardLink tag="h5" className="text-center mt-1 mb-3">{gitHubLink}</CardLink>
+        <CardSubtitle tag="h3" className="text-center mt-1 mb-3">{name}</CardSubtitle>
         <CardSubtitle tag="h5" className="text-center mt-1 mb-3">{desc}</CardSubtitle>
-        <CardSubtitle tag="h5" className="text-center mt-1 mb-3">{url}</CardSubtitle>
-        <CardLink tag="h5" className="text-center mt-1 mb-3">{loomLink}</CardLink>
         <CardSubtitle tag="h5" className="text-center mt-1 mb-3">{techUsed}</CardSubtitle>
+        <CardLink href={url}>See the App</CardLink>
+        <hr></hr>
+        <CardLink href={loomLink}>See Loom Video</CardLink>
+        <hr></hr>
+        <CardLink href={gitHubLink}>Link to GitHub</CardLink>
       </Card>
     </ProjectsItem>
   );
