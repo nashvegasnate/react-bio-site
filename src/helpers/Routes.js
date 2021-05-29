@@ -33,7 +33,7 @@ function Routes({ projects, setProjects, admin }) {
       <Switch>
         <Route
           exact
-          path='/'
+          path='/home'
           component={Home} />
         <Route
           exact
