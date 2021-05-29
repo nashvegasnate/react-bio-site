@@ -23,6 +23,7 @@ function Projects({ projects, setProjects }) {
             firebaseKey={projectsInfo.firebaseKey}
             gitHubLink={projectsInfo.gitHubLink}
             name={projectsInfo.name}
+            url={projectsInfo.url}
             desc={projectsInfo.desc}
             screenshot={projectsInfo.screenshot}
             loomLink={projectsInfo.loomLink}
@@ -43,6 +44,7 @@ Projects.propTypes = {
   loomLink: PropTypes.string,
   techUsed: PropTypes.string,
   projects: PropTypes.array,
+  url: PropTypes.string,
   setProjects: PropTypes.func
 };
 

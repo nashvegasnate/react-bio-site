@@ -24,9 +24,9 @@
    align-items: center;
    background-size: cover;
    height: auto;
-   width: 50em;
-   padding: 2em;
-   margin-top: 10em;
+   width: 60em;
+   padding-top: 10em;
+   margin-top: 14em;
    position: absolute;
    top: 50%;
    left: 50%;
@@ -40,6 +40,7 @@
   position: fixed;
   top: 40%;
   left: 25%;
+  width: 350px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   // color: #01BAEF;
   // color: #FFFBFF;
@@ -62,8 +63,9 @@
 .aboutTitle {
   display: block;
   position: fixed;
+  width: 350px;
   top: 70%;
-  left: 20%;
+  left: 25%;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   // color: #FFFBFF;
   color: #FAFAFA;
@@ -76,8 +78,8 @@
   align-items: center;
   background-size: cover;
   height: auto;
-  width: 60em;
-  padding: 2em;
+  width: 50em;
+  padding-top: 10em;
   margin-top: 10em;
   position: absolute;
   top: 50%;
@@ -85,4 +87,39 @@
   transform: translate(-50%, -50%);
   z-index: -1;
  
+}
+
+.tech-container {
+  display: flex;
+  position: fixed;
+  flex-wrap: row wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  padding: 5em;
+  margin-top: 10vh;
+  height:30vh;
+  width:65em;
+  top: 10%;
+  left: 12%;
+}
+
+.techTitle {
+  display: flex;
+  position: fixed;
+  top: 10%;
+  left: 35%;
+  justify-content: center;  
+  align-items: center;
+  text-align: center;
+  width: 350px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  // color: #01BAEF;
+  // color: #FFFBFF;
+  // color: #FAFAFA;
+  color: #CCDAD1;
+  // font-family: 'Archivo Black', sans-serif;
+  font-family: 'Yeseva One', cursive;
+  font-size: 3em;
+
 }

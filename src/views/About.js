@@ -11,8 +11,7 @@ export default function About() {
       <div className='aboutTitle'>
         <h2>Who I Am</h2>
         <p>Here is where information about me will go. Do you know me? Do I know you? Do I know me?</p>
-        <p>So many questions, but so little time to input any meaningful </p>
-        <p>information into this paragraph at the moment.</p>
+        <p>So many questions, but so little time to input any meaningful information into this paragraph at the moment.</p>
       </div>
     </div>
   );
