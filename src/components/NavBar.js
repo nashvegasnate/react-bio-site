@@ -6,8 +6,7 @@ import {
   Navbar,
   NavbarToggler,
   Nav,
-  NavItem,
-  Button
+  NavItem
 } from 'reactstrap';
 import { signInUser, signOutUser } from '../helpers/auth';
 
@@ -26,8 +25,8 @@ const NavBar = ({ admin }) => {
 
   return (
     <div className="navBar">
-      <Navbar color="light" light expand="lg" justifycontent="space-evenly">
-        <Link to="/">Nathan Keith</Link>
+      <Navbar color="none" light expand="lg" justifycontent="space-evenly">
+        <Link to="/">NATHAN KEITH</Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
@@ -49,11 +48,9 @@ const NavBar = ({ admin }) => {
               && <div>
                   <NavItem>
                     {admin ? (
-                      <Button className="signOut" color="warning" onClick={signOutUser}>SIGN OUT
-                      </Button>
+                      <i className="fas fa-lock-open" onClick={signOutUser}></i>
                     ) : (
-                      <Button className="signIn" color="info" onClick={signInUser}>EDIT?
-                      </Button>
+                      <i className="fas fa-lock" onClick={signInUser}></i>
                     )}
                   </NavItem>
                 </div>}

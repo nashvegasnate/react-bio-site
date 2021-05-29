@@ -2,9 +2,14 @@
 @import 'variables';
 @import 'forms';
 @import 'buttons';
+@import 'containers';
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 body {
   background-color: $favColor;
   justify-content: space-around;
-
+  background-image:url(https://img.freepik.com/free-vector/stylish-hexagonal-line-pattern-background_1017-19742.jpg?size=626&ext=jpg);
+  // background-image:url(https://media.istockphoto.com/vectors/background-pattern-seamless-geometric-diamond-abstract-gold-luxury-vector-id1144362341?k=6&m=1144362341&s=612x612&w=0&h=WObnQPu7bUkqb1orn_vDWry25YvfE3CgGFQefUTOED8=);
+  // background-image:url(https://media.istockphoto.com/vectors/computer-circuit-board-vector-id1132644908?b=1&k=6&m=1132644908&s=612x612&w=0&h=mMwidDeCm_ROeDUvdgot3iIwKFxCq6R_kbUYkM4oAK4=);
+  // background-image: url(https://static.vecteezy.com/system/resources/previews/000/685/694/non_2x/white-and-gray-art-deco-simple-geometric-pattern-vector.jpg);
 }
