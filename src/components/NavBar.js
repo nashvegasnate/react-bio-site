@@ -25,12 +25,36 @@ const NavBar = ({ admin }) => {
 
   return (
     <div className="navBar">
-      <Navbar color="none" light expand="lg" justifycontent="space-evenly">
-        <Link to="/">NATHAN KEITH</Link>
+      <Navbar color="none" bg="light" variant="light" expand="lg">
+      <Link to="/">NATHAN KEITH</Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
           </Nav>
+          <a
+            className="btn btn-floating"
+            href="mailto:nashvegasnate@gmail.com"
+          >
+            <i className="fas fa-envelope fa-2x"></i>
+          </a>
+          <a
+            className="btn btn-floating"
+            href="https://www.linkedin.com/in/nathan-keith-b20123210/"
+            style={{ display: 'table-cell' }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a
+            className="btn btn-floating"
+            href="https://github.com/nashvegasnate"
+            style={{ display: 'table-cell' }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-github fa-2x"></i>
+          </a>
           <NavItem>
             <Link className="nav-link" to="/about">ABOUT</Link>
           </NavItem>

@@ -2,9 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import ProjectsCard from '../components/ProjectsCard';
-// import { Button } from 'reactstrap';
-// import BoardForm from '../components/Forms/BoardForm';
-// import BoardCard from '../components/Cards/BoardCard';
 
 const ProjectsContainer = styled.div`
   display: flex;

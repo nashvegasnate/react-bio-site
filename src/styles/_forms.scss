@@ -2,23 +2,45 @@
   display: flex;
   align-items: center;
   background-size: cover;
+  justify-content: center;
   height: auto;
   width: 100px;
-  width: 3em; 
+  // width: 3em; 
   margin-bottom: 1em; 
   margin-right: 3em;
   margin-top: 1em;
-  // justify-content: space-around
+  color:green;
 };
 
 .navBar {
-  display:inline-block;
-  align-items: center;
-  width: 100%;
+  display:inline-flex;
+  align-items:center;
+  align-content:center;
+  width: auto! important;
   height: auto;
-  justify-content: space-around;
+  justify-content:space-around;
+  font-size: 25px;
+  // padding: 1 1em;
+  font-family: 'Yeseva One', cursive;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 };
 
+.navbar-collapse {
+  // width:100%;
+  // justify-content: space-around;
+  // background-color: #FCF6B1;
+  padding: 2px;;
+}
 li {
   list-style: none;
+  color: orange;
+  font-size: 25px;
+}
+
+.nav-link {
+  color:#DA5552;
 }
