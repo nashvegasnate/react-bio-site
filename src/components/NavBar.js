@@ -6,6 +6,7 @@ import {
   Navbar,
   NavbarToggler,
   Nav,
+  NavbarBrand,
   NavItem
 } from 'reactstrap';
 import { signInUser, signOutUser } from '../helpers/auth';
@@ -25,13 +26,13 @@ const NavBar = ({ admin }) => {
 
   return (
     <div className="navBar">
-      <Navbar color="none" bg="light" variant="light" expand="lg">
-      <Link to="/">NATHAN KEITH</Link>
-        <NavbarToggler onClick={toggle} />
+      <Navbar color="none" bg="light" expand="lg">
+      <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
+          <NavbarBrand href="/">NATHAN KEITH</NavbarBrand>
           </Nav>
-          <a
+        <a
             className="btn btn-floating"
             href="mailto:nashvegasnate@gmail.com"
           >
@@ -55,6 +56,7 @@ const NavBar = ({ admin }) => {
           >
             <i className="fab fa-github fa-2x"></i>
           </a>
+          {/* <Link to="/">NATHAN KEITH</Link> */}
           <NavItem>
             <Link className="nav-link" to="/about">ABOUT</Link>
           </NavItem>

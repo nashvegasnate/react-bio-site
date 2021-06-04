@@ -1,15 +1,15 @@
 import React from 'react';
-import Charleston from '../assets/Charleston.png';
+import Charleston2 from '../assets/Charleston2.png';
 
 export default function Home() {
   return (
     <div className='home-container'>
       <div className='homeTitle'>
-        <h2>Nathan Keith</h2>
+        <h1>Nathan Keith</h1>
         <h3>Full-Stack Software Engineer</h3>
       </div>
       <div className='home-pic-container'>
-      <img src={Charleston} className='home-pic'></img>
+      <img src={Charleston2} className='home-pic'></img>
       </div>
     </div>
   );
