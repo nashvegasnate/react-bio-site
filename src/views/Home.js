@@ -1,5 +1,5 @@
 import React from 'react';
-import Charleston2 from '../assets/Charleston2.png';
+import Charleston from '../assets/Charleston.png';
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
         <h3>Full-Stack Software Engineer</h3>
       </div>
       <div className='home-pic-container'>
-      <img src={Charleston2} className='home-pic'></img>
+      <img src={Charleston} className='home-pic'></img>
       </div>
     </div>
   );
