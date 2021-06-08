@@ -5,16 +5,12 @@ import {
   Redirect
 } from 'react-router-dom';
 import PropTypes from 'prop-types';
-// import AddPlayer from '../views/AddPlayer';
 import Home from '../views/Home';
 import Projects from '../views/Projects';
 import About from '../views/About';
 import Tech from '../views/Tech';
 import Contact from '../views/Contact';
 import EditProjects from '../views/admin/EditProjects';
-// import Players from '../views/Players';
-// import SinglePlayer from '../views/SinglePlayer';
-// import NotFound from '../views/NotFound';
 
 const AuthedRoute = ({ component: Component, admin, ...rest }) => {
   const routeChecker = (burrito) => (admin
