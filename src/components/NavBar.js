@@ -26,7 +26,7 @@ const NavBar = ({ admin }) => {
 
   return (
     <div className="navBar">
-      <Navbar color="none" bg="light" expand="lg">
+      <Navbar color="light" bg="light" expand="lg">
       <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>

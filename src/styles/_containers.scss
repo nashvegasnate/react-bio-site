@@ -1,7 +1,7 @@
 .home-container {
-  display: inline-block;
+  // display: inline-block;
   // justify-content: space-evenly;
-  height: 10em;
+  // height: 10em;
   margin-top: 5em;
   color: #494949;
   font-weight: bold;
@@ -21,11 +21,10 @@
 
  .home-pic {
    align-items: center;
-   background-size: cover;
    height: auto;
    width: 60em;
    padding-top: 10em;
-   margin-top: 12em;
+   margin-top: 2em;
    position: absolute;
    top: 50%;
    left: 50%;
@@ -52,10 +51,10 @@
 
 .about-container {
   display: inline-block;
-  height: 10em;
+  // height: 10em;
   margin-top: 5em;
   margin-bottom: 10em;
-  color: #494949;
+  color: #4cad75;
   font-weight: bold;
   font-family:'Times New Roman', Times, serif;
 }
@@ -63,27 +62,30 @@
 .aboutTitle {
   display: inline;
   position: fixed;
-  width: 350px;
-  top: 25%;
-  left: 23%;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  width: 20em;
+  top: 15%;
+  left: 3%;
+  height: auto;
+  // text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   // color: #FFFBFF;
-  color: #FAFAFA;
+  // color: #A4C2A8;
+  color: #50A2A7;
   // font-family: 'Archivo Black', sans-serif;
   // font-family: 'Fjalla One', sans-serif;
   font-family: 'Yeseva One', cursive;
+  font-size:medium;
 }
 
 .about-pic {
   align-items: center;
   background-size: cover;
   height: auto;
-  width: 50em;
-  // padding-top: 9em;
-  margin-top: 13em;
+  width: 50%;
+  padding-top: 10em;
+  margin-top: 5em;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 60%;
   transform: translate(-50%, -50%);
   z-index: -1;
  
