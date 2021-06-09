@@ -1,7 +1,13 @@
-# React Template
+# Bio Site
+This is my personal website complete with the following pages:
+- Home
+- About Me
+- Projects
+- Technologies 
+- Contact Me
 
-**Use this template to get up and running quickly on projects.**
+# See the app in action here
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4e7f89c1-3c3d-4e78-8977-03e76799ee52/deploy-status)](https://app.netlify.com/sites/nathan-keith/deploys)
 
-This is just like the webpack template. Use it, create the repo, connect it to your local and `npm i`.
+## As the owner of this app, I am able to CRUD on the projects page once I am authenticated by clicking on the padlock in the upper right-hand corner.
 
-- [Steps to deploy](https://github.com/nss-nightclass-projects/REACT-Deployment-Netlify)
