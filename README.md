@@ -1,5 +1,5 @@
 # Bio Site
-This is my personal website complete with the following pages:
+### This is my personal website complete with the following pages:
 - Home
 - About Me
 - Projects (and Edit Projects once authenticated)
